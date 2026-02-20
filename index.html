@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyBookShop - Inicio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#0a1215] text-[#f9f8f7] font-['Inter'] text-[16px]">
+    
+    <header class="bg-[#504405] py-5 sticky top-0 z-[1000] shadow-[0_4px_10px_rgba(0,0,0,0.3)]">
+  <div class="max-w-[1240px] mx-auto px-5 flex flex-wrap items-center justify-between gap-y-4">
+    
+    <div class="w-full md:w-auto flex justify-center md:justify-start order-1 md:mr-auto lg:mr-4 xl:mr-8 shrink-0">
+      <h1 class="font-['Roboto'] text-[28px] font-semibold whitespace-nowrap">
+        <a href="index.html">MyBookShop</a>
+      </h1>
+    </div>
+
+    <div class="hidden md:block text-[3rem] text-[#c7aa0d] order-2 lg:order-3 ml-4 shrink-0">
+      <i class="fa-solid fa-book-open"></i>
+    </div>
+
+    <nav class="w-full lg:w-auto lg:flex-grow order-3 lg:order-2 bg-[#1f373e] rounded-[10px] lg:rounded-[50px] p-[15px] lg:px-[20px] xl:px-[40px] lg:py-[12px] flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap items-start md:items-center justify-center lg:justify-between transition-all duration-300">
+      
+      <button id="mobile-menu-btn" class="md:hidden text-[#f9f8f7] text-[1.5rem] mb-4 focus:outline-none w-full text-left shrink-0">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul id="nav-links" class="hidden md:flex flex-col md:flex-row w-full lg:w-auto order-3 md:order-1 lg:order-2 justify-center lg:justify-end gap-[1rem] md:gap-[2rem] lg:gap-[1.5rem] xl:gap-[3rem] text-center mb-[1rem] md:mb-[1.5rem] lg:mb-0 pt-[1rem] md:pt-0 border-t border-white/10 md:border-none">
+        <li><a href="index.html" class="font-medium text-[1.1rem] text-[#f3d845] hover:text-[#f3d845] transition-colors duration-300 ">Tu Librería</a></li>
+        <li><a href="tienda.html" class="font-medium text-[1.1rem] hover:text-[#f3d845] transition-colors duration-300 ">Compra On-line</a></li>
+        <li><a href="#" class="font-medium text-[1.1rem] hover:text-[#f3d845] transition-colors duration-300 ">Contacto</a></li>
+      </ul>
+
+      <form action="#" class="relative flex items-center w-full md:w-[60%] lg:w-[200px] xl:w-[280px] order-2 md:order-2 lg:order-1 mx-auto lg:mx-0 shrink-0">
+        <i class="fa-solid fa-magnifying-glass absolute left-[10px] text-[#0a1215] text-[1rem] pointer-events-none"></i>
+        <input 
+          type="text" 
+          placeholder="Buscar..." 
+          name="search" 
+          class="w-full py-[8px] pl-[35px] pr-[15px] rounded-[4px] border-none bg-[#deded9] text-[#0a1215] font-['Inter'] text-[15px] placeholder-[#142529] focus:outline-none focus:ring-2 focus:ring-[#c7aa0d] transition-shadow"
+        />
+      </form>
+
+    </nav>
+
+  </div>
+</header>
+
+    <main>
+      <section class="bg-[#0a1215] py-[4rem]">
+        <div class="max-w-[1240px] mx-auto px-5">
+          <h2 class="font-['Inter'] font-bold text-[36px] md:text-[48px] text-center mb-[1rem] pt-[1rem] md:pt-[2rem] text-[#f9f8f7]">¿Quiénes somos?</h2>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-[2rem] md:gap-[3rem] items-center mt-[2rem] min-h-auto lg:min-h-[55vh]">
+            <article class="w-full">
+              <img src="public/1.png" alt="Librería interior" class="w-full h-[250px] md:h-[350px] object-cover rounded-[8px] shadow-[0_10px_20px_rgba(0,0,0,0.5)]" />
+            </article>
+
+            <article class="text-justify text-[16px] leading-relaxed">
+              <p class="mb-[1rem]">
+                En nuestra librería creemos que las grandes historias nunca
+                pasan de moda. Por eso, nos especializamos en libros clásicos de
+                la literatura universal, aquellos que han marcado generaciones y
+                siguen inspirando a lectores de todas las edades.
+              </p>
+              <p class="mb-[1rem]">
+                Desde las obras inmortales de Cervantes, Austen o Tolstói, hasta
+                las páginas inolvidables de Dickens o García Márquez, aquí
+                encontrarás una cuidada selección de títulos que celebran el
+                arte de la palabra y el valor del tiempo.
+              </p>
+              <p class="mb-[1rem]">
+                Ven a redescubrir los clásicos, porque cada lectura es un viaje
+                al alma de la historia.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#504405] py-[4rem]">
+        <div class="max-w-[1240px] mx-auto px-5">
+          <h2 class="font-['Inter'] font-bold text-[36px] md:text-[48px] text-center mb-[1rem] pt-[1rem] md:pt-[2rem] text-[#f9f8f7]">Nuestros Productos</h2>
+          <p class="text-center max-w-[800px] mx-auto mb-[2rem] md:mb-[3rem] opacity-90 text-[16px]">
+            Vendemos una cuidada selección de libros clásicos, obras que han
+            marcado la historia.
+          </p>
+
+          <div class="relative flex items-center lg:px-[3rem]">
+            <button class="hidden lg:block absolute left-0 z-10 text-[2rem] bg-transparent border-none text-[#f9f8f7] cursor-pointer hover:text-[#f3d845] transition-colors" id="scrollLeft">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div class="flex gap-[1.5rem] md:gap-[2rem] overflow-x-auto scroll-smooth pb-[1rem] no-scrollbar cursor-grab active:cursor-grabbing w-full" id="productsContainer">
+              
+              <article class="bg-[#c7aa0d] rounded-[20px] min-w-[220px] md:min-w-[250px] w-[220px] md:w-[250px] p-[1rem] text-[#0a1215] flex flex-col items-center shadow-[0_8px_15px_rgba(0,0,0,0.2)] shrink-0 transition-transform duration-300 hover:-translate-y-2">
+                <div class="w-full min-h-[3rem] flex items-center justify-center mb-[1rem]">
+                  <h3 class="font-semibold text-[1.1rem] text-center">Francofacts</h3>
+                </div>
+                <div class="mb-[1rem]">
+                  <img src="public/6.png" alt="Francofacts" class="w-[130px] md:w-[150px] h-[190px] md:h-[220px] object-cover shadow-[3px_3px_8px_rgba(0,0,0,0.3)]" />
+                </div>
+                <div class="w-full text-center mt-auto">
+                  <p class="font-bold text-[1.1rem]">16.15€</p>
+                </div>
+              </article>
+
+              <article class="bg-[#c7aa0d] rounded-[20px] min-w-[220px] md:min-w-[250px] w-[220px] md:w-[250px] p-[1rem] text-[#0a1215] flex flex-col items-center shadow-[0_8px_15px_rgba(0,0,0,0.2)] shrink-0 transition-transform duration-300 hover:-translate-y-2">
+                <div class="w-full min-h-[3rem] flex items-center justify-center mb-[1rem]">
+                  <h3 class="font-semibold text-[1.1rem] text-center">El Viaje de Mi Padre</h3>
+                </div>
+                <div class="mb-[1rem]">
+                  <img src="public/4.png" alt="El Viaje" class="w-[130px] md:w-[150px] h-[190px] md:h-[220px] object-cover shadow-[3px_3px_8px_rgba(0,0,0,0.3)]" />
+                </div>
+                <div class="w-full text-center mt-auto">
+                  <p class="font-bold text-[1.1rem]">19.85€</p>
+                </div>
+              </article>
+
+              <article class="bg-[#c7aa0d] rounded-[20px] min-w-[220px] md:min-w-[250px] w-[220px] md:w-[250px] p-[1rem] text-[#0a1215] flex flex-col items-center shadow-[0_8px_15px_rgba(0,0,0,0.2)] shrink-0 transition-transform duration-300 hover:-translate-y-2">
+                <div class="w-full min-h-[3rem] flex items-center justify-center mb-[1rem]">
+                  <h3 class="font-semibold text-[1.1rem] text-center">Mi Lucha</h3>
+                </div>
+                <div class="mb-[1rem]">
+                  <img src="public/3.png" alt="Mi Lucha" class="w-[130px] md:w-[150px] h-[190px] md:h-[220px] object-cover shadow-[3px_3px_8px_rgba(0,0,0,0.3)]" />
+                </div>
+                <div class="w-full text-center mt-auto">
+                  <p class="font-bold text-[1.1rem]">22.70€</p>
+                </div>
+              </article>
+
+              <article class="bg-[#c7aa0d] rounded-[20px] min-w-[220px] md:min-w-[250px] w-[220px] md:w-[250px] p-[1rem] text-[#0a1215] flex flex-col items-center shadow-[0_8px_15px_rgba(0,0,0,0.2)] shrink-0 transition-transform duration-300 hover:-translate-y-2">
+                <div class="w-full min-h-[3rem] flex items-center justify-center mb-[1rem]">
+                  <h3 class="font-semibold text-[1.1rem] text-center">Lepanto</h3>
+                </div>
+                <div class="mb-[1rem]">
+                  <img src="public/5.png" alt="Lepanto" class="w-[130px] md:w-[150px] h-[190px] md:h-[220px] object-cover shadow-[3px_3px_8px_rgba(0,0,0,0.3)]" />
+                </div>
+                <div class="w-full text-center mt-auto">
+                  <p class="font-bold text-[1.1rem]">15.50€</p>
+                </div>
+              </article>
+
+              <article class="bg-[#c7aa0d] rounded-[20px] min-w-[220px] md:min-w-[250px] w-[220px] md:w-[250px] p-[1rem] text-[#0a1215] flex flex-col items-center shadow-[0_8px_15px_rgba(0,0,0,0.2)] shrink-0 transition-transform duration-300 hover:-translate-y-2">
+                <div class="w-full min-h-[3rem] flex items-center justify-center mb-[1rem]">
+                  <h3 class="font-semibold text-[1.1rem] text-center">Verdugos del 36</h3>
+                </div>
+                <div class="mb-[1rem]">
+                  <img src="public/9.png" alt="Verdugos del 36" class="w-[130px] md:w-[150px] h-[190px] md:h-[220px] object-cover shadow-[3px_3px_8px_rgba(0,0,0,0.3)]" />
+                </div>
+                <div class="w-full text-center mt-auto">
+                  <p class="font-bold text-[1.1rem]">16.50€</p>
+                </div>
+              </article>
+
+            </div>
+
+            <button class="hidden lg:block absolute right-0 z-10 text-[2rem] bg-transparent border-none text-[#f9f8f7] cursor-pointer hover:text-[#f3d845] transition-colors" id="scrollRight">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#0a1215] py-[4rem]">
+        <div class="max-w-[1240px] mx-auto px-5">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-[3rem] lg:gap-[4rem] items-start mt-[1rem] md:mt-[2rem]">
+            <article class="w-full order-2 lg:order-1">
+              <img src="public/2.png" alt="Mapa" class="w-full h-auto rounded-[8px] opacity-80" />
+            </article>
+
+            <article class="w-full order-1 lg:order-2">
+              <h2 class="font-['Inter'] font-bold text-[36px] md:text-[48px] text-center lg:text-right mb-[1.5rem]">Nuestras tiendas</h2>
+              <ul class="text-center lg:text-right">
+                <li class="mb-[0.5rem] md:mb-[0.8rem] text-[1.5rem] md:text-[2rem] pb-[0.5rem] hover:text-[#f3d845] transition-colors"><a href="https://www.google.com/maps/place/C.+Alcalá,+Madrid/@40.4202097,-3.6904367,17z/data=!3m1!4b1!4m6!3m5!1s0xd422f3f48cbf6a7:0xb7b3542e98264faf!8m2!3d40.4202097!4d-3.6878564!16s%2Fm%2F0568cp_?entry=ttu&g_ep=EgoyMDI2MDEwNi4wIKXMDSoASAFQAw%3D%3D">Calle de Alcalá — Madrid</a></li>
+                <li class="mb-[0.5rem] md:mb-[0.8rem] text-[1.5rem] md:text-[2rem] pb-[0.5rem] hover:text-[#f3d845] transition-colors"><a href="https://www.google.com/maps/place/La+Rambla,+Barcelona/@41.3856087,2.1672363,17z/data=!3m1!4b1!4m6!3m5!1s0x12a4a258081714c9:0x24bef7ac8842bdc4!8m2!3d41.3856087!4d2.1698166!16zL20vMDNxODRr?entry=ttu&g_ep=EgoyMDI2MDEwNi4wIKXMDSoASAFQAw%3D%3D">La Rambla — Barcelona</a></li>
+                <li class="mb-[0.5rem] md:mb-[0.8rem] text-[1.5rem] md:text-[2rem] pb-[0.5rem] hover:text-[#f3d845] transition-colors"><a href="https://www.google.com/maps/place/Av.+de+la+Constitución,+Casco+Antiguo,+Sevilla/@37.3853638,-5.9965748,17z/data=!3m1!4b1!4m6!3m5!1s0xd126c17566c287d:0xaaa3e2da037bcd7c!8m2!3d37.3853638!4d-5.9939945!16s%2Fg%2F120nf5yz?entry=ttu&g_ep=EgoyMDI2MDEwNi4wIKXMDSoASAFQAw%3D%3D">Constitución — Sevilla</a></li>
+                <li class="mb-[0.5rem] md:mb-[0.8rem] text-[1.5rem] md:text-[2rem] pb-[0.5rem] hover:text-[#f3d845] transition-colors"><a href="https://www.google.com/maps/place/Diego+Lopez+Haroko+Kale+Nagusia,+Abando,+Bilbao,+Bizkaia/@43.2632828,-2.9387943,17z/data=!3m1!4b1!4m6!3m5!1s0xd4e4fd823d06835:0x7d9e9c929b6fe09c!8m2!3d43.2632828!4d-2.936214!16s%2Fm%2F04cy3z6?entry=ttu&g_ep=EgoyMDI2MDEwNi4wIKXMDSoASAFQAw%3D%3D">Gran Vía — Bilbao</a></li>
+                <li class="mb-[0.5rem] md:mb-[0.8rem] text-[1.5rem] md:text-[2rem] pb-[0.5rem] hover:text-[#f3d845] transition-colors"><a href="https://www.google.com/maps/place/C.+Marqués+de+Larios,+Distrito+Centro,+Málaga/@36.7194687,-4.4241553,17z/data=!3m1!4b1!4m6!3m5!1s0xd72f795b1a4f35f:0xf3d44789b8b0e006!8m2!3d36.7194687!4d-4.421575!16s%2Fg%2F1239_749?entry=ttu&g_ep=EgoyMDI2MDEwNi4wIKXMDSoASAFQAw%3D%3D">Calle Larios — Málaga</a></li>
+                <li class="mb-[0.5rem] md:mb-[0.8rem] text-[1.5rem] md:text-[2rem] pb-[0.5rem] hover:text-[#f3d845] transition-colors"><a href="https://www.google.com/maps/place/C.+Uría,+Oviedo,+Asturias/@43.3640393,-5.8539181,17z/data=!3m1!4b1!4m6!3m5!1s0xd368cfb5f60c34f:0x67d5209cc81633c9!8m2!3d43.3640393!4d-5.8513378!16s%2Fg%2F122r2pky?entry=ttu&g_ep=EgoyMDI2MDEwNi4wIKXMDSoASAFQAw%3D%3D">Calle Uría — Oviedo</a></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#504405] pt-[3rem] pb-[5rem] relative">
+      <div class="max-w-[1240px] mx-auto px-5 grid grid-cols-1 md:grid-cols-3 gap-[3rem] md:gap-[1rem] items-center md:items-start text-center md:text-left">
+        
+        <div class="flex justify-center md:justify-start md:pl-[20px]">
+          <i class="fa-solid fa-book-open text-[4rem] text-[#c7aa0d] opacity-90"></i>
+        </div>
+
+        <div class="text-center">
+          <h4 class="font-semibold text-[1rem] uppercase tracking-[1px] mb-[1.5rem]">CONTÁCTANOS</h4>
+          <div class="flex justify-center gap-[1.5rem]">
+            <a href="#" class="hover:opacity-80 transition-opacity"><i class="fa-brands fa-instagram text-[2.2rem] bg-[radial-gradient(circle_at_30%_107%,#fdf497_0%,#fdf497_5%,#fd5949_45%,#d6249f_60%,#285aeb_90%)] bg-clip-text text-transparent"></i></a>
+            <a href="#" class="hover:opacity-80 transition-opacity"><i class="fa-brands fa-facebook-f text-[2.2rem] text-[#1877f2]"></i></a>
+            <a href="#" class="hover:opacity-80 transition-opacity"><i class="fa-brands fa-whatsapp text-[2.2rem] text-[#25d366]"></i></a>
+          </div>
+        </div>
+
+        <div class="text-center md:text-right md:pr-[20px]">
+          <h4 class="font-semibold text-[1rem] uppercase tracking-[1px] mb-[1.5rem]">MÁS SOBRE NOSOTROS</h4>
+          <ul>
+            <li class="mb-[0.6rem]"><a href="#" class="text-[#ebebe8] font-light hover:text-[#f9f8f7] hover:underline transition-all">Políticas de Privacidad y Datos</a></li>
+            <li class="mb-[0.6rem]"><a href="#" class="text-[#ebebe8] font-light hover:text-[#f9f8f7] hover:underline transition-all">Nuestros Productos</a></li>
+            <li class="mb-[0.6rem]"><a href="#" class="text-[#ebebe8] font-light hover:text-[#f9f8f7] hover:underline transition-all">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <p class="absolute bottom-[20px] left-0 w-full text-center text-[12px] opacity-70">© Todos los derechos reservados Sergio, 2026</p>
+    </footer>
+
+    <script>
+      // Lógica de Menú Móvil
+      const menuBtn = document.getElementById("mobile-menu-btn");
+      const navLinks = document.getElementById("nav-links");
+
+      if (menuBtn && navLinks) {
+        menuBtn.addEventListener("click", () => {
+          navLinks.classList.toggle("hidden");
+          navLinks.classList.toggle("flex");
+        });
+      }
+
+      // Lógica de Carrusel
+      const container = document.getElementById("productsContainer");
+      const btnLeft = document.getElementById("scrollLeft");
+      const btnRight = document.getElementById("scrollRight");
+
+      if (container && btnLeft && btnRight) {
+        btnRight.addEventListener("click", () => {
+          container.scrollBy({ left: 300, behavior: "smooth" });
+        });
+        btnLeft.addEventListener("click", () => {
+          container.scrollBy({ left: -300, behavior: "smooth" });
+        });
+
+        // Eventos para el Drag con ratón
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        container.addEventListener('mousedown', (e) => {
+            isDown = true;
+            container.classList.add('cursor-grabbing');
+            startX = e.pageX - container.offsetLeft;
+            scrollLeft = container.scrollLeft;
+        });
+        container.addEventListener('mouseleave', () => {
+            isDown = false;
+            container.classList.remove('cursor-grabbing');
+        });
+        container.addEventListener('mouseup', () => {
+            isDown = false;
+            container.classList.remove('cursor-grabbing');
+        });
+        container.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - container.offsetLeft;
+            const walk = (x - startX) * 2;
+            container.scrollLeft = scrollLeft - walk;
+        });
+      }
+    </script>
+  </body>
+</html>
